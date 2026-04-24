@@ -178,6 +178,7 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 4, clue: 'Bagian tumbuhan yang menyerap air dari tanah', answer: 'AKAR', hint: 'A _ _ _' },
     { id: 5, clue: 'Gas yang dibutuhkan manusia untuk bernapas', answer: 'OKSIGEN', hint: 'O _ _ _ _ _ _' },
     { id: 6, clue: 'Hewan yang bisa berubah warna sesuai lingkungan', answer: 'BUNGLON', hint: 'B _ _ _ _ _ _' },
+    { id: 7, clue: 'Penemu Gaya Gravitasi', answer: 'Newton', hint: '_ _ _ _ _ N' },
   ],
   hard: [
     { id: 1, clue: 'Fenomena alam saat air naik ke langit dan turun sebagai hujan', answer: 'EVAPORASI', hint: 'E _ _ _ _ _ _ _ _' },
