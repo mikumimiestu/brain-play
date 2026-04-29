@@ -11,6 +11,7 @@ import {
 } from '@/data/gameData';
 import { CircleCheck as CheckCircle2, Circle as XCircle, ChevronRight, Tag } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Timer } from 'lucide-react';
 
 interface ImageGuessGameProps {
   difficulty: Difficulty;
@@ -22,13 +23,15 @@ type AnswerState = 'idle' | 'correct' | 'wrong';
 
 export function ImageGuessGame({ difficulty, onFinish, onHome }: ImageGuessGameProps) {
   const [questions] = useState<ImageQuestion[]>(() =>
-    shuffleArray(imageQuestions[difficulty])
+    shuffleArray(imageQuestions[difficulty]).slice(0, 5)
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [answerState, setAnswerState] = useState<AnswerState>('idle');
   const [imageLoaded, setImageLoaded] = useState(false);
+  const timerDuration = difficulty === 'easy' ? 20 : difficulty === 'medium' ? 15 : 10;
+  const [timeLeft, setTimeLeft] = useState(timerDuration);
 
   const question = questions[currentIndex];
   const isLast = currentIndex === questions.length - 1;
@@ -37,7 +40,23 @@ export function ImageGuessGame({ difficulty, onFinish, onHome }: ImageGuessGameP
     setImageLoaded(false);
     setSelectedOption(null);
     setAnswerState('idle');
-  }, [currentIndex]);
+    setTimeLeft(timerDuration);
+  }, [currentIndex, timerDuration]);
+
+  useEffect(() => {
+    if (answerState !== 'idle') return;
+    
+    if (timeLeft <= 0) {
+      setAnswerState('wrong');
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft, answerState]);
 
   const handleSelect = (option: string) => {
     if (answerState !== 'idle') return;
@@ -87,6 +106,15 @@ export function ImageGuessGame({ difficulty, onFinish, onHome }: ImageGuessGameP
           score={score}
           onHome={onHome}
         />
+
+        {answerState === 'idle' && (
+          <div className="flex items-center justify-center gap-2 mb-4 bg-background/50 backdrop-blur-sm py-2 rounded-full border shadow-sm">
+            <Timer className={cn("size-5", timeLeft <= 5 ? "text-rose-500 animate-pulse" : "text-primary")} />
+            <span className={cn("font-bold text-lg", timeLeft <= 5 ? "text-rose-500" : "text-primary")}>
+              {timeLeft}s
+            </span>
+          </div>
+        )}
 
         <Card className="overflow-hidden shadow-xl border-2">
           {/* Image */}

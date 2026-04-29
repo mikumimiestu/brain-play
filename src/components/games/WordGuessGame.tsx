@@ -22,7 +22,7 @@ type AnswerState = 'idle' | 'correct' | 'wrong';
 
 export function WordGuessGame({ difficulty, onFinish, onHome }: WordGuessGameProps) {
   const [questions] = useState<WordQuestion[]>(() =>
-    shuffleArray(wordQuestions[difficulty])
+    shuffleArray(wordQuestions[difficulty]).slice(0, 5)
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -98,6 +98,8 @@ export function WordGuessGame({ difficulty, onFinish, onHome }: WordGuessGamePro
           score={score}
           onHome={onHome}
         />
+
+
 
         <Card className="shadow-xl border-2">
           <CardContent className="p-6 space-y-5">

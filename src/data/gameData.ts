@@ -69,6 +69,20 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
       options: ['Serigala', 'Anjing', 'Rubah', 'Coyote'],
       category: 'Hewan',
     },
+    {
+      id: 7,
+      image: 'https://images.unsplash.com/photo-1517685633466-403d6955aeab?w=480&h=360&fit=crop&auto=format',
+      answer: 'Gunung',
+      options: ['Gunung', 'Bukit', 'Lembah', 'Pantai'],
+      category: 'Alam',
+    },
+    {
+      id: 8,
+      image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=480&h=360&fit=crop&auto=format',
+      answer: 'Sepatu',
+      options: ['Baju', 'Sepatu', 'Celana', 'Topi'],
+      category: 'Benda',
+    },
   ],
   medium: [
     {
@@ -112,6 +126,20 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
       answer: 'Jeruk',
       options: ['Lemon', 'Jeruk', 'Jeruk Nipis', 'Grapefruit'],
       category: 'Buah',
+    },
+    {
+      id: 7,
+      image: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=480&h=360&fit=crop&auto=format',
+      answer: 'Pug',
+      options: ['Bulldog', 'Pug', 'Beagle', 'Poodle'],
+      category: 'Anjing',
+    },
+    {
+      id: 8,
+      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=480&h=360&fit=crop&auto=format',
+      answer: 'Susu',
+      options: ['Air', 'Susu', 'Jus', 'Sirup'],
+      category: 'Minuman',
     },
   ],
   hard: [
@@ -157,6 +185,20 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
       options: ['Rambutan', 'Durian', 'Salak', 'Nangka'],
       category: 'Buah Eksotis',
     },
+    {
+      id: 7,
+      image: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=480&h=360&fit=crop&auto=format',
+      answer: 'Stroberi',
+      options: ['Apel', 'Stroberi', 'Ceri', 'Frambos'],
+      category: 'Buah',
+    },
+    {
+      id: 8,
+      image: 'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=480&h=360&fit=crop&auto=format',
+      answer: 'Aurora',
+      options: ['Pelangi', 'Aurora', 'Bintang', 'Galaksi'],
+      category: 'Fenomena',
+    },
   ],
 };
 
@@ -172,14 +214,15 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 6, clue: 'Hewan peliharaan yang suka mengeong', answer: 'KUCING', hint: 'K _ _ _ _ _' },
     { id: 7, clue: 'Presiden pertama Indonesia', answer: 'SOEKARNO', hint: 'S _ _ _ _ _ _ _' },
     { id: 8, clue: 'Mata uang indonesia', answer: 'RUPIAH', hint: 'R _ _ _ _ _' },
-    { id: 9, clue: 'Lawan elemen gelap', answer: 'CAHAYA', hint:'C _ _ _ _ _' },
-    { id: 10, clue: 'Sinonim kata sama ', answer: 'MIRIP', hint:'M _ _ _ _' },
-    { id: 11, clue: 'Permainan sepak bola dimainkan dengan ', answer: 'KAKI', hint:'K _ _ _' },
-    { id: 12, clue: 'Antonim kata keluar ', answer: 'MASUk', hint:'M _ _ _ _' },
-    { id: 13, clue: 'Hewan dengan leher panjang ', answer: 'JERAPAH', hint:'J _ _ _ _ _ _' },
-    { id: 14, clue: 'Alat untuk melihat benda jauh ', answer: 'TELESKOP', hint:'T _ _ _ _ _ _ _' },
-    { id: 15, clue: ' ', answer: '', hint:'T _ _ _ _ _ _ _' },
-    { id: 16, clue: ' ', answer: '', hint:'T _ _ _ _ _ _ _' },
+    { id: 9, clue: 'Lawan elemen gelap', answer: 'CAHAYA', hint: 'C _ _ _ _ _' },
+    { id: 10, clue: 'Sinonim kata sama ', answer: 'MIRIP', hint: 'M _ _ _ _' },
+    { id: 11, clue: 'Permainan sepak bola dimainkan dengan ', answer: 'KAKI', hint: 'K _ _ _' },
+    { id: 12, clue: 'Antonim kata keluar ', answer: 'MASUk', hint: 'M _ _ _ _' },
+    { id: 13, clue: 'Hewan dengan leher panjang ', answer: 'JERAPAH', hint: 'J _ _ _ _ _ _' },
+    { id: 14, clue: 'Alat untuk melihat benda jauh ', answer: 'TELESKOP', hint: 'T _ _ _ _ _ _ _' },
+    { id: 15, clue: 'Tinta hitam keluar dari hewan laut ini', answer: 'CUMI', hint: 'C _ _ _' },
+    { id: 16, clue: 'Burung yang suka meniru suara', answer: 'BEO', hint: 'B _ _' },
+    { id: 17, clue: 'Tempat menyimpan buku', answer: 'RAK', hint: 'R _ _' },
   ],
   medium: [
     { id: 1, clue: 'Planet terbesar di tata surya kita', answer: 'YUPITER', hint: 'Y _ _ _ _ _ _' },
@@ -220,8 +263,9 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 14, clue: 'Hewan yang aktif malam hari disebut', answer: 'NOKTURNAL', hint: 'N _ _ _ _ _ _ _ _' },
     { id: 15, clue: 'Hewan melahirkan disebut', answer: 'VIVIPAR', hint: 'V _ _ _ _ _ _' },
     { id: 16, clue: 'Hewan hidup di dua alam', answer: 'AMFIBI', hint: 'A _ _ _ _ _' },
-    { id: 17, clue: '', answer: 'AMFIBI', hint: 'A _ _ _ _ _' },
-    { id: 18, clue: '', answer: 'AMFIBI', hint: 'A _ _ _ _ _' },
+    { id: 17, clue: 'Alat ukur gempa bumi', answer: 'SEISMOGRAF', hint: 'S _ _ _ _ _ _ _ _ _' },
+    { id: 18, clue: 'Bintang paling terang di malam hari', answer: 'SIRIUS', hint: 'S _ _ _ _ _' },
+    { id: 19, clue: 'Pakar yang meneliti fosil', answer: 'PALEONTOLOG', hint: 'P _ _ _ _ _ _ _ _ _ _' },
   ],
 };
 
@@ -235,6 +279,8 @@ export const arrangeQuestions: Record<Difficulty, ArrangeQuestion[]> = {
     { id: 4, answer: 'BUNGA', hint: 'Tanaman yang indah dan harum', category: 'Alam' },
     { id: 5, answer: 'LANGIT', hint: 'Ada di atas kita', category: 'Alam' },
     { id: 6, answer: 'SEPATU', hint: 'Dipakai di kaki', category: 'Pakaian' },
+    { id: 7, answer: 'PISANG', hint: 'Buah berwarna kuning yang disukai monyet', category: 'Buah' },
+    { id: 8, answer: 'LEMARI', hint: 'Tempat menyimpan baju', category: 'Perabotan' },
   ],
   medium: [
     { id: 1, answer: 'PELANGI', hint: 'Muncul setelah hujan', category: 'Alam' },
@@ -243,6 +289,8 @@ export const arrangeQuestions: Record<Difficulty, ArrangeQuestion[]> = {
     { id: 4, answer: 'KOMPUTER', hint: 'Alat elektronik untuk bekerja', category: 'Elektronik' },
     { id: 5, answer: 'BERLIAN', hint: 'Batu permata paling keras', category: 'Mineral' },
     { id: 6, answer: 'KELELAWAR', hint: 'Hewan mamalia yang terbang malam', category: 'Hewan' },
+    { id: 7, answer: 'TELESKOP', hint: 'Melihat benda langit yang jauh', category: 'Alat' },
+    { id: 8, answer: 'ORKESTRA', hint: 'Sekelompok musisi yang bermain bersama', category: 'Musik' },
   ],
   hard: [
     { id: 1, answer: 'PERSAHABATAN', hint: 'Hubungan antara dua teman', category: 'Abstrak' },
@@ -251,6 +299,8 @@ export const arrangeQuestions: Record<Difficulty, ArrangeQuestion[]> = {
     { id: 4, answer: 'PERPUSTAKAAN', hint: 'Tempat menyimpan dan meminjam buku', category: 'Tempat' },
     { id: 5, answer: 'PENGETAHUAN', hint: 'Informasi yang dipahami oleh seseorang', category: 'Abstrak' },
     { id: 6, answer: 'PEMANDANGAN', hint: 'Keindahan alam yang terlihat', category: 'Alam' },
+    { id: 7, answer: 'KESEJAHTERAAN', hint: 'Keadaan hidup yang aman dan makmur', category: 'Sosial' },
+    { id: 8, answer: 'KEBIJAKSANAAN', hint: 'Sifat orang yang arif dan cerdas', category: 'Sifat' },
   ],
 };
 

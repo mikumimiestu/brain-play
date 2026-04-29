@@ -29,7 +29,7 @@ interface Letter {
 
 export function WordArrangeGame({ difficulty, onFinish, onHome }: WordArrangeGameProps) {
   const [questions] = useState<ArrangeQuestion[]>(() =>
-    shuffleArray(arrangeQuestions[difficulty])
+    shuffleArray(arrangeQuestions[difficulty]).slice(0, 5)
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
