@@ -50,14 +50,14 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGlzYW5nfGVufDB8fDB8fHww',
       answer: 'Pisang',
       options: ['Pisang', 'Singkong', 'Talas', 'Kentang'],
       category: 'Buah',
     },
     {
       id: 5,
-      image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1597953601374-1ff2d5640c85?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFuZGF8ZW58MHx8MHx8fDA%3D',
       answer: 'Panda',
       options: ['Beruang', 'Panda', 'Koala', 'Rakun'],
       category: 'Hewan',
@@ -71,7 +71,7 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
     },
     {
       id: 7,
-      image: 'https://images.unsplash.com/photo-1517685633466-403d6955aeab?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VudW5nfGVufDB8fDB8fHww',
       answer: 'Gunung',
       options: ['Gunung', 'Bukit', 'Lembah', 'Pantai'],
       category: 'Alam',
@@ -101,7 +101,7 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWlmZmVsfGVufDB8fDB8fHww',
       answer: 'Menara Eiffel',
       options: ['Big Ben', 'Menara Eiffel', 'Menara Pisa', 'Colosseum'],
       category: 'Tempat Terkenal',
@@ -122,7 +122,7 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
     },
     {
       id: 6,
-      image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1576181177940-cb8592693079?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGplcnVrfGVufDB8fDB8fHww',
       answer: 'Jeruk',
       options: ['Lemon', 'Jeruk', 'Jeruk Nipis', 'Grapefruit'],
       category: 'Buah',
@@ -141,46 +141,53 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
       options: ['Air', 'Susu', 'Jus', 'Sirup'],
       category: 'Minuman',
     },
+    {
+      id: 9,
+      image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGl6emF8ZW58MHx8MHx8fDA%3D',
+      answer: 'Pizza',
+      options: ['Spageti', 'Hotdog', 'Pizza', 'Tiramisu'],
+      category: 'Makanan',
+    },
   ],
   hard: [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1612368195523-19e00a05b1cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmclMjB1dGFufGVufDB8fDB8fHww',
       answer: 'Orang Utan',
       options: ['Simpanse', 'Gorila', 'Orang Utan', 'Bonobo'],
       category: 'Primata',
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1555169062-013468b47731?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1712874364529-2d17f6111bb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QXhvbG90bHxlbnwwfHwwfHx8MA%3D%3D',
       answer: 'Axolotl',
       options: ['Salamander', 'Kadal', 'Axolotl', 'Iguana'],
       category: 'Hewan Langka',
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1681407979872-0a4cbde28391?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJpZyUyMGJlbnxlbnwwfHwwfHx8MA%3D%3D',
       answer: 'Big Ben',
       options: ['Menara Elizabeth', 'Big Ben', 'Tower Bridge', 'Westminster'],
       category: 'Landmark',
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?w=480&h=360&fit=crop&auto=format',
+      image: 'https://plus.unsplash.com/premium_photo-1663047540698-12e93c082dda?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmVidWxhfGVufDB8fDB8fHww',
       answer: 'Nebula',
       options: ['Galaksi', 'Nebula', 'Supernova', 'Pulsar'],
       category: 'Astronomi',
     },
     {
       id: 5,
-      image: 'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a2FrdHVzfGVufDB8fDB8fHww',
       answer: 'Kaktus',
       options: ['Lidah Buaya', 'Kaktus', 'Sukulen', 'Agave'],
       category: 'Tanaman',
     },
     {
       id: 6,
-      image: 'https://images.unsplash.com/photo-1551918120-9739cb430c6d?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1519544442-93857b48665e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZHVyaWFufGVufDB8fDB8fHww',
       answer: 'Durian',
       options: ['Rambutan', 'Durian', 'Salak', 'Nangka'],
       category: 'Buah Eksotis',
@@ -194,7 +201,7 @@ export const imageQuestions: Record<Difficulty, ImageQuestion[]> = {
     },
     {
       id: 8,
-      image: 'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=480&h=360&fit=crop&auto=format',
+      image: 'https://images.unsplash.com/photo-1571371867188-fdc3f1f8e62d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF1cm9yYXxlbnwwfHwwfHx8MA%3D%3D',
       answer: 'Aurora',
       options: ['Pelangi', 'Aurora', 'Bintang', 'Galaksi'],
       category: 'Fenomena',
@@ -223,6 +230,9 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 15, clue: 'Tinta hitam keluar dari hewan laut ini', answer: 'CUMI', hint: 'C _ _ _' },
     { id: 16, clue: 'Burung yang suka meniru suara', answer: 'BEO', hint: 'B _ _' },
     { id: 17, clue: 'Tempat menyimpan buku', answer: 'RAK', hint: 'R _ _' },
+    { id: 18, clue: 'Kendaraan yang berroda emapat', answer: 'MOBIL', hint: 'M _ _ _ _' },
+    { id: 19, clue: 'Makanan Khas Padang yang terkenal', answer: 'RENDANG', hint: 'R _ _ _ _ _ _' },
+    { id: 20, clue: 'Makanan kesukaan Panda', answer: 'BAMBU', hint: 'B _ _ _ _ ' },
   ],
   medium: [
     { id: 1, clue: 'Planet terbesar di tata surya kita', answer: 'YUPITER', hint: 'Y _ _ _ _ _ _' },
@@ -245,6 +255,7 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 18, clue: 'Organ pemompa darah', answer: 'JANTUNG', hint: 'J _ _ _ _ _ _' },
     { id: 19, clue: 'Hewan berdarah dingin', answer: 'REPTIL', hint: 'R _ _ _ _ _' },
     { id: 20, clue: 'Hewan tercepat di darat', answer: 'CHEETAH', hint: 'C _ _ _ _ _ _' },
+    { id: 21, clue: 'Tumbuhan gurun yang bisa menyimpan air', answer: 'KAKTUS', hint: 'K _ _ _ _ _' },
   ],
   hard: [
     { id: 1, clue: 'Fenomena alam saat air naik ke langit dan turun sebagai hujan', answer: 'EVAPORASI', hint: 'E _ _ _ _ _ _ _ _' },
@@ -266,6 +277,7 @@ export const wordQuestions: Record<Difficulty, WordQuestion[]> = {
     { id: 17, clue: 'Alat ukur gempa bumi', answer: 'SEISMOGRAF', hint: 'S _ _ _ _ _ _ _ _ _' },
     { id: 18, clue: 'Bintang paling terang di malam hari', answer: 'SIRIUS', hint: 'S _ _ _ _ _' },
     { id: 19, clue: 'Pakar yang meneliti fosil', answer: 'PALEONTOLOG', hint: 'P _ _ _ _ _ _ _ _ _ _' },
+    { id: 20, clue: 'Hewan melata purba asli Indonesia yang masih hidup sampai sekarang', answer: 'KOMODO', hint: 'K _ _ _ _ _' },
   ],
 };
 
